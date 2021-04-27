@@ -1,0 +1,23 @@
+.qaButtons {
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sortButton {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.1rem;
+  border: none;
+  background-color: #008cba;
+  color: white;
+}
+
+.removeButton {
+  padding: 0.5rem;
+  border-radius: 0.1rem;
+  border: none;
+  background-color: #f44336;
+  color: white;
+}

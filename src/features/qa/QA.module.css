@@ -1,0 +1,48 @@
+.qaContainer {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.createdQuestionsText {
+  padding-top: 2rem;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  font-size: 1rem;
+  visibility: hidden;
+  background-color: rgb(255, 255, 255);
+  color: rgb(68, 68, 68);
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  border: 1px;
+  border-color: rgb(68, 68, 68);
+  border-style: solid;
+  position: absolute;
+  z-index: 1;
+  width: 10rem;
+  margin-top: 2.5rem;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: ' ';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -0.4rem;
+  border-width: 0.4rem;
+  border-style: solid;
+  border-color: transparent transparent rgb(68, 68, 68) transparent;
+}

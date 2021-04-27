@@ -1,0 +1,42 @@
+.questionContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.collapsible {
+  background-color: rgb(197, 197, 197);
+  color: #444;
+  cursor: pointer;
+  padding: 1rem;
+  width: 30rem;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  padding: 1rem;
+  width: 30rem;
+  display: block;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  word-wrap: break-word;
+}
+
+.deleteButton {
+  background-color: rgb(230, 98, 98);
+  border: none;
+  border-left-width: thin;
+  opacity: 0.75;
+}
+.deleteButton:hover {
+  opacity: 1;
+}

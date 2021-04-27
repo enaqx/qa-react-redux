@@ -1,0 +1,100 @@
+.questionCreateForm {
+  width: 33rem;
+  position: relative;
+}
+
+.questionCreateForm label {
+  margin: 0.2rem 0.2rem 0.2rem 0;
+}
+
+.createNewQuestionsText {
+  padding-top: 1rem;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.questionCreateForm input {
+  width: 100%;
+  resize: horizontal;
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.questionInputContainer {
+  margin-right: 0px;
+  position: relative;
+}
+
+.questionCreateForm textarea {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.createAnswerInput {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.createButton {
+  padding: 0.5rem;
+  width: 10rem;
+  border-radius: 0.1rem;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  font-size: 1rem;
+  visibility: hidden;
+  background-color: rgb(255, 255, 255);
+  color: rgb(68, 68, 68);
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  border: 1px;
+  border-color: rgb(68, 68, 68);
+  border-style: solid;
+  position: absolute;
+  z-index: 1;
+  width: 10rem;
+  margin-top: 2.5rem;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: ' ';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -0.4rem;
+  border-width: 0.4rem;
+  border-style: solid;
+  border-color: transparent transparent rgb(68, 68, 68) transparent;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.questionCreateForm input[type='checkbox'] {
+  width: 1rem;
+  margin-bottom: 1rem;
+}
