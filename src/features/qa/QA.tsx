@@ -6,9 +6,12 @@ import {
   createQuestionAsync,
   removeAllQuestions,
   removeQuestion,
+  setEditState,
   setShowAnswer,
   sortQuestions,
   selectQuestions,
+  updateQuestion,
+  updateAnswer,
 } from './qaSlice'
 import type { AppDispatch } from '../../app/store'
 
@@ -42,15 +45,19 @@ export default function QA() {
 
       {questions.length == 0 && <div>No questions yet :-(</div>}
 
-      {questions.map(({ id, question, answer, showAnswer }) => (
+      {questions.map(({ id, question, answer, showAnswer, editState }) => (
         <QuestionCollapsible
           key={id}
           id={id}
           question={question}
           answer={answer}
           showAnswer={showAnswer}
+          editState={editState}
           showAnswerAction={() => dispatch(setShowAnswer(id))}
           removeQuestion={() => dispatch(removeQuestion(id))}
+          setEditState={() => dispatch(setEditState(id))}
+          updateQuestion={(value) => dispatch(updateQuestion({ id, value }))}
+          updateAnswer={(value) => dispatch(updateAnswer({ id, value }))}
         />
       ))}
 
@@ -74,6 +81,7 @@ export default function QA() {
             question: newQuestion,
             answer: newAnswer,
             showAnswer: false,
+            editState: false,
           }
           if (delay) {
             dispatch(createQuestionAsync(questionParams))
